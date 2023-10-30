@@ -2,7 +2,7 @@
 
 	require "./database/database.php";
     
-    $meses = DBRead_Simple("SELECT MONTHNAME(`date`) AS mes, MONTH(`date`) AS id FROM house GROUP BY mes");
+    $meses = DBRead_Simple("SELECT MONTHNAME(`date`) AS mes, MONTH(`date`) AS id FROM house GROUP BY mes ORDER BY `date`");
     
     $index = 0;
 
